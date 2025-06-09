@@ -40,7 +40,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Sidebar Info
-st.sidebar.image("https://drive.google.com/file/d/1k4oxtWETMRqhSpaa5eBBcXC6UpSuhcwH/view?usp=sharing", width=120)
+st.sidebar.image("My photo official.jpg", width=150)
 st.sidebar.title("Raghavendra Rongali")
 st.sidebar.markdown("**Role:** Senior Software Engineer")
 st.sidebar.markdown("📍 Visakhapatnam, India")
@@ -72,14 +72,15 @@ st.markdown("""
 
 st.markdown("<div class='section-title'>💼 Experience</div>", unsafe_allow_html=True)
 st.markdown("""
-**Sr. Software Engineer** – Zensar Technologies (Nov 2020 - Present)
+**Sr. Software Engineer** – Zensar Technologies (Nov 2020 - Present)  
 - Backend System Design & Optimization: Developed and maintained robust, scalable backend systems using Java Spring Boot to support high-traffic applications, ensuring minimal downtime and optimal performance.  
 ✿ **API Development:** Led the design and implementation of RESTful APIs using Java Spring Boot and AWS Lambda, improving system performance by reducing API response times by 25%.  
 ✿ **Cloud Integration:** Integrated cloud-native solutions by developing AWS Lambda functions and using AWS API Gateway to improve the scalability of web services and reduce infrastructure costs.  
-✿ **Database Management:** Worked with Snowflake and Oracle for data storage and optimized database queries to handle large datasets efficiently.
-✿ **Mentorship & Code Review:** Mentored junior developers and conducted code reviews to ensure adherence to coding standards and best practices, improving overall code quality and team efficiency. 
-✿ **Troubleshooting:** Diagnosed and resolved issues related to backend system performance, optimizing Java garbage collection and database connection handling to reduce latency and increase throughput.
+✿ **Database Management:** Worked with Snowflake and Oracle for data storage and optimized database queries to handle large datasets efficiently.  
+✿ **Mentorship & Code Review:** Mentored junior developers and conducted code reviews to ensure adherence to coding standards and best practices, improving overall code quality and team efficiency.  
+✿ **Troubleshooting:** Diagnosed and resolved issues related to backend system performance, optimizing Java garbage collection and database connection handling to reduce latency and increase throughput.  
 """)
+
 
 st.markdown("<div class='section-title'>📂 Projects</div>", unsafe_allow_html=True)
 col1, col2 = st.columns(2)
