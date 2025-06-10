@@ -89,14 +89,14 @@ with col1:
     st.markdown("""
     <div class='card'>
     <b>Partner Operational Readiness Assessment (PORA)</b><br>
-    Built with NLP and cosine similarity to recommend relevant articles.
+    Developed a scalable application to assess partner readiness for software and licensing operations. Integrated AWS Lambda for serverless backend functions and implemented dynamic localization in 8 languages using Google Cloud Translate API
     </div>
     """, unsafe_allow_html=True)
 
     st.markdown("""
     <div class='card'>
     <b>BPLO True Forward Tracker</b><br>
-    Implemented using BLIP model and HuggingFace Transformers.
+     Developed and deployed a customer data management system to update customer data through responsive UI screens, using Java Spring Boot and AWS Elastic Beanstalk.
     </div>
     """, unsafe_allow_html=True)
 
@@ -104,16 +104,20 @@ with col2:
     st.markdown("""
     <div class='card'>
     <b>Customer Scope Definition</b><br>
-    Analyzed and predicted temperature fluctuations using Random Forest.
+     It is an application designed to create definitions by searching for values and retrieving the results. The application includes all features such as creating, editing, and downloading definitions
     </div>
     """, unsafe_allow_html=True)
 
     st.markdown("""
     <div class='card'>
     <b>Anomaly Detection in Traffic Videos</b><br>
-    Built using Streamlit to showcase my work.
+    Built a machine learning model to detect anomalous activities from traffic surveillance videos. Utilized Python, OpenCV, and HDP for video frame processing and anomaly detection.
     </div>
     """, unsafe_allow_html=True)
+
+st.markdown("### 📄 Resume")
+resume_url = "https://drive.google.com/uc?export=download&id=1mPvCKPWHFk-fg5uevW3i9TWVpeyz3uAn"
+st.markdown(f"[👉 Download My Resume (PDF)]({resume_url})", unsafe_allow_html=True)
 
 st.markdown("<div class='section-title'>📞 Contact</div>", unsafe_allow_html=True)
 st.markdown("""
