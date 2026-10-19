@@ -80,22 +80,22 @@ st.markdown("""
 
 st.markdown("<div class='section-title'>💼 Experience</div>", unsafe_allow_html=True)
 st.markdown("""
-**Sr. Associate** – Cognizant Technology Solutions (Dec 2025 - Present)  
-- Backend System Design & Optimization: Developed and maintained robust, scalable backend systems using Java Spring Boot to support high-traffic applications, ensuring minimal downtime and optimal performance.  
-✿ Agentic Workflow Architecture: Architect and build production-grade multi-agent and human-in-the-loop workflows automating Cisco Commerce Operations intake and problem backlog management.
-✿ LLM APIs & Prompt Engineering: Implement robust LLM API integrations, advanced prompt engineering techniques, and context engineering.
-✿ ServiceNow & Enterprise Automation: Design resilient REST API integrations to automate ServiceNow incident management and backlog triaging.
-✿ Snowflake Cortex Agent & Chatbots: Leverage Snowflake Cortex Agent and AI chatbot interfaces for semantic ticket resolution, duplicate detection, and intelligent operational support.
-✿ **Guardrails & Evaluation:** Implement LLM routing, context engineering, and human-in-the-loop gates to ensure safe, deterministic, and accurate operational actions.  
- """)
-st.markdown("""
-**Sr. Software Engineer** – Zensar Technologies (Nov 2020 - Dec 2025)  
-- Backend System Design & Optimization: Developed and maintained robust, scalable backend systems using Java Spring Boot to support high-traffic applications, ensuring minimal downtime and optimal performance.  
-✿ **API Development:** Led the design and implementation of RESTful APIs using Java Spring Boot and AWS Lambda, improving system performance by reducing API response times by 25%.  
-✿ **Cloud Integration:** Integrated cloud-native solutions by developing AWS Lambda functions and using AWS API Gateway to improve the scalability of web services and reduce infrastructure costs.  
-✿ **Database Management:** Worked with Snowflake and Oracle for data storage and optimized database queries to handle large datasets efficiently.  
-✿ **Mentorship & Code Review:** Mentored junior developers and conducted code reviews to ensure adherence to coding standards and best practices, improving overall code quality and team efficiency.  
-✿ **Troubleshooting:** Diagnosed and resolved issues related to backend system performance, optimizing Java garbage collection and database connection handling to reduce latency and increase throughput.  
+**Sr. Associate** – Cognizant Technology Solutions (Dec 2025 - Present)
+
+- **Agentic Workflow Architecture:** Architected and built production-grade multi-agent and human-in-the-loop workflows automating Cisco Commerce Operations intake and problem backlog management.
+- **LLM APIs & Prompt Engineering:** Implemented robust LLM API integrations, advanced prompt engineering techniques, and context engineering.
+- **ServiceNow & Enterprise Automation:** Designed resilient REST API integrations to automate ServiceNow incident management and backlog triaging.
+- **Snowflake Cortex Agent & Chatbots:** Leveraged Snowflake Cortex Agent and AI chatbot interfaces for semantic ticket resolution, duplicate detection, and intelligent operational support.
+- **Guardrails & Evaluation:** Implemented LLM routing, context engineering, and human-in-the-loop gates to ensure safe, deterministic, and accurate operational actions.
+
+**Sr. Software Engineer** – Zensar Technologies (Nov 2020 - Dec 2025)
+
+- **Backend System Design & Optimization:** Developed and maintained robust, scalable backend systems using Java Spring Boot to support high-traffic applications, ensuring minimal downtime and optimal performance.
+- **API Development:** Led the design and implementation of RESTful APIs using Java Spring Boot and AWS Lambda, improving system performance by reducing API response times by 25%.
+- **Cloud Integration:** Integrated cloud-native solutions by developing AWS Lambda functions and using AWS API Gateway to improve the scalability of web services and reduce infrastructure costs.
+- **Database Management:** Worked with Snowflake and Oracle for data storage and optimized database queries to handle large datasets efficiently.
+- **Mentorship & Code Review:** Mentored junior developers and conducted code reviews to ensure adherence to coding standards and best practices, improving overall code quality and team efficiency.
+- **Troubleshooting:** Diagnosed and resolved issues related to backend system performance, optimizing Java garbage collection and database connection handling to reduce latency and increase throughput.
 """)
 
 
@@ -143,8 +143,8 @@ st.markdown(f"[👉 Download My Resume (PDF)]({resume_url})", unsafe_allow_html=
 st.markdown("<div class='section-title'>📞 Contact</div>", unsafe_allow_html=True)
 st.markdown("""
 - Email: raghavendra95550@gmail.com
-- LinkedIn: [linkedin.com/in/yourprofile](https://www.linkedin.com/in/raghavendra-rongali-90827013a/)
-- GitHub: [github.com/yourprofile](https://github.com/raghava95550)
+- LinkedIn: [linkedin.com/in/raghavendra-rongali](https://www.linkedin.com/in/raghavendra-rongali-90827013a/)
+- GitHub: [github.com/raghava95550](https://github.com/raghava95550)
 """)
 
 st.markdown("<div class='footer'>© 2025 Raghavendra Rongali | Powered by Streamlit</div>", unsafe_allow_html=True)
