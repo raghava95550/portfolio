@@ -42,7 +42,7 @@ st.markdown("""
 # Sidebar Info
 st.sidebar.image("My photo official.jpg", width=150)
 st.sidebar.title("Raghavendra Rongali")
-st.sidebar.markdown("**Role:** Senior Software Engineer")
+st.sidebar.markdown("**Role:** Senior Associate")
 st.sidebar.markdown("📍 Visakhapatnam, India")
 st.sidebar.markdown("📫 [Email](mailto:raghavendra95550@gmail.com)")
 st.sidebar.markdown("🌐 [LinkedIn](https://www.linkedin.com/in/raghavendra-rongali-90827013a/)")
@@ -53,7 +53,15 @@ st.markdown("<div class='main-title'>Hello, I'm Raghavendra Rongali</div>", unsa
 st.markdown("<div class='subtitle'>Senior Software Engineer | Full Stack Developer | AI Enthusiast</div>", unsafe_allow_html=True)
 
 st.markdown("""<div class='section-title'>🧑‍💼 About Me</div>
-I'm a Senior Java Developer with over 4 years of experience architecting and delivering high-performance, cloud-native enterprise applications using Java, Spring Boot, and microservices architecture. I specialize in building scalable, fault-tolerant distributed systems and integrating with Oracle SQL, with deployment expertise in Docker/Kubernetes on AWS.
+Results-driven AI/LLM Engineer with 5+ years of software engineering experience, specializing in
+designing, building, and deploying production-grade applications, AI chatbots, LLM API integrations,
+and Snowflake Cortex Agent workflows. Highly proficient in GitHub Copilot-driven
+development—leveraging it for ~80% of code generation—and advanced prompt engineering to build
+scalable enterprise solutions. Actively upskilling and expanding practical competencies in RAG pipelines,
+LangChain, LangGraph, Agent-to-Agent (A2A) protocols, and Model Context Protocol (MCP) through
+hands-on LLM API integrations. Proven track record in microservices development using Spring Boot,
+with extensive experience in AWS Cloud infrastructure, LLM observability, and end-to-end CI/CD in
+global environments.
 
 I have a proven track record of leading full product lifecycles—from technical design to production deployment—within Agile teams. I'm currently deepening my knowledge in Generative AI, working with LLM-based applications, Retrieval-Augmented Generation (RAG) frameworks, and rapid ML prototyping using Python.
 I'm passionate about blending strong software engineering practices with AI-driven innovation, aiming to deliver intelligent, resilient systems in modern cloud environments.
@@ -88,19 +96,34 @@ col1, col2 = st.columns(2)
 with col1:
     st.markdown("""
     <div class='card'>
+    <b>CO Problem Backlog Management</b><br>
+    Developed an AI-enabled Intelligent Intake Submission Form leveraging Snowflake Cortex
+    Agent and Python LLM APIs, utilizing GitHub Copilot to accelerate ~80% of development and
+    code generation for auto-enhancing problem titles, descriptions, and proposed resolutions.
+    Built duplicate-problem detection workflow leveraging advanced prompt engineering and
+    Snowflake Cortex semantic capabilities.
+    Established prompt engineering standards and tool-calling integrations between front-end UI (Angular),
+    Python FastAPI, LLM APIs, and core database layers.
+    </div>
+    """, unsafe_allow_html=True)
+    
+    st.markdown("""
+    <div class='card'>
     <b>Partner Operational Readiness Assessment (PORA)</b><br>
     Developed a scalable application to assess partner readiness for software and licensing operations. Integrated AWS Lambda for serverless backend functions and implemented dynamic localization in 8 languages using Google Cloud Translate API
     </div>
     """, unsafe_allow_html=True)
 
+
+
+with col2:
     st.markdown("""
     <div class='card'>
     <b>BPLO True Forward Tracker</b><br>
      Developed and deployed a customer data management system to update customer data through responsive UI screens, using Java Spring Boot and AWS Elastic Beanstalk.
     </div>
     """, unsafe_allow_html=True)
-
-with col2:
+    
     st.markdown("""
     <div class='card'>
     <b>Customer Scope Definition</b><br>
@@ -108,13 +131,13 @@ with col2:
     </div>
     """, unsafe_allow_html=True)
 
+with col3:
     st.markdown("""
     <div class='card'>
     <b>Anomaly Detection in Traffic Videos</b><br>
     Built a machine learning model to detect anomalous activities from traffic surveillance videos. Utilized Python, OpenCV, and HDP for video frame processing and anomaly detection.
     </div>
     """, unsafe_allow_html=True)
-
 st.markdown("### 📄 Resume")
 resume_url = "https://drive.google.com/uc?export=download&id=1mPvCKPWHFk-fg5uevW3i9TWVpeyz3uAn"
 st.markdown(f"[👉 Download My Resume (PDF)]({resume_url})", unsafe_allow_html=True)
