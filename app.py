@@ -50,7 +50,7 @@ st.sidebar.markdown("🐙 [GitHub](https://github.com/raghava95550)")
 
 # Main content
 st.markdown("<div class='main-title'>Hello, I'm Raghavendra Rongali</div>", unsafe_allow_html=True)
-st.markdown("<div class='subtitle'>Senior Software Engineer | Full Stack Developer | AI Enthusiast</div>", unsafe_allow_html=True)
+st.markdown("<div class='subtitle'>Senior Associate | Full Stack Developer | AI Enthusiast</div>", unsafe_allow_html=True)
 
 st.markdown("""<div class='section-title'>🧑‍💼 About Me</div>
 Results-driven AI/LLM Engineer with 5+ years of software engineering experience, specializing in
@@ -80,7 +80,16 @@ st.markdown("""
 
 st.markdown("<div class='section-title'>💼 Experience</div>", unsafe_allow_html=True)
 st.markdown("""
-**Sr. Software Engineer** – Zensar Technologies (Nov 2020 - Present)  
+**Sr. Associate** – Cognizant Technology Solutions (Dec 2025 - Present)  
+- Backend System Design & Optimization: Developed and maintained robust, scalable backend systems using Java Spring Boot to support high-traffic applications, ensuring minimal downtime and optimal performance.  
+✿ Agentic Workflow Architecture: Architect and build production-grade multi-agent and human-in-the-loop workflows automating Cisco Commerce Operations intake and problem backlog management.
+✿ LLM APIs & Prompt Engineering: Implement robust LLM API integrations, advanced prompt engineering techniques, and context engineering.
+✿ ServiceNow & Enterprise Automation: Design resilient REST API integrations to automate ServiceNow incident management and backlog triaging.
+✿ Snowflake Cortex Agent & Chatbots: Leverage Snowflake Cortex Agent and AI chatbot interfaces for semantic ticket resolution, duplicate detection, and intelligent operational support.
+✿ **Guardrails & Evaluation:** Implement LLM routing, context engineering, and human-in-the-loop gates to ensure safe, deterministic, and accurate operational actions.  
+ """)
+st.markdown("""
+**Sr. Software Engineer** – Zensar Technologies (Nov 2020 - Dec 2025)  
 - Backend System Design & Optimization: Developed and maintained robust, scalable backend systems using Java Spring Boot to support high-traffic applications, ensuring minimal downtime and optimal performance.  
 ✿ **API Development:** Led the design and implementation of RESTful APIs using Java Spring Boot and AWS Lambda, improving system performance by reducing API response times by 25%.  
 ✿ **Cloud Integration:** Integrated cloud-native solutions by developing AWS Lambda functions and using AWS API Gateway to improve the scalability of web services and reduce infrastructure costs.  
@@ -91,55 +100,44 @@ st.markdown("""
 
 
 st.markdown("<div class='section-title'>📂 Projects</div>", unsafe_allow_html=True)
-col1, col2 = st.columns(2)
 
-with col1:
-    st.markdown("""
-    <div class='card'>
-    <b>CO Problem Backlog Management</b><br>
-    Developed an AI-enabled Intelligent Intake Submission Form leveraging Snowflake Cortex
-    Agent and Python LLM APIs, utilizing GitHub Copilot to accelerate ~80% of development and
-    code generation for auto-enhancing problem titles, descriptions, and proposed resolutions.
-    Built duplicate-problem detection workflow leveraging advanced prompt engineering and
-    Snowflake Cortex semantic capabilities.
-    Established prompt engineering standards and tool-calling integrations between front-end UI (Angular),
-    Python FastAPI, LLM APIs, and core database layers.
-    </div>
-    """, unsafe_allow_html=True)
-    
-    st.markdown("""
-    <div class='card'>
-    <b>Partner Operational Readiness Assessment (PORA)</b><br>
-    Developed a scalable application to assess partner readiness for software and licensing operations. Integrated AWS Lambda for serverless backend functions and implemented dynamic localization in 8 languages using Google Cloud Translate API
-    </div>
-    """, unsafe_allow_html=True)
+# Render projects row-wise (2 cards per row)
+projects = [
+    {
+        "title": "CO Problem Backlog Management",
+        "desc": "Developed an AI-enabled Intelligent Intake Submission Form leveraging Snowflake Cortex Agent and Python LLM APIs, utilizing GitHub Copilot to accelerate ~80% of development and code generation for auto-enhancing problem titles, descriptions, and proposed resolutions. Built duplicate-problem detection workflow leveraging advanced prompt engineering and Snowflake Cortex semantic capabilities. Established prompt engineering standards and tool-calling integrations between front-end UI (Angular), Python FastAPI, LLM APIs, and core database layers."
+    },
+    {
+        "title": "Partner Operational Readiness Assessment (PORA)",
+        "desc": "Developed a scalable application to assess partner readiness for software and licensing operations. Integrated AWS Lambda for serverless backend functions and implemented dynamic localization in 8 languages using Google Cloud Translate API."
+    },
+    {
+        "title": "BPLO True Forward Tracker",
+        "desc": "Developed and deployed a customer data management system to update customer data through responsive UI screens, using Java Spring Boot and AWS Elastic Beanstalk."
+    },
+    {
+        "title": "Customer Scope Definition",
+        "desc": "An application designed to create definitions by searching for values and retrieving the results. Includes features for creating, editing, and downloading definitions."
+    },
+    {
+        "title": "Anomaly Detection in Traffic Videos",
+        "desc": "Built a machine learning model to detect anomalous activities from traffic surveillance videos. Utilized Python, OpenCV, and HDP for video frame processing and anomaly detection."
+    },
+]
 
-
-
-with col2:
-    st.markdown("""
-    <div class='card'>
-    <b>BPLO True Forward Tracker</b><br>
-     Developed and deployed a customer data management system to update customer data through responsive UI screens, using Java Spring Boot and AWS Elastic Beanstalk.
-    </div>
-    """, unsafe_allow_html=True)
-    
-    st.markdown("""
-    <div class='card'>
-    <b>Customer Scope Definition</b><br>
-     It is an application designed to create definitions by searching for values and retrieving the results. The application includes all features such as creating, editing, and downloading definitions
-    </div>
-    """, unsafe_allow_html=True)
-
-with col3:
-    st.markdown("""
-    <div class='card'>
-    <b>Anomaly Detection in Traffic Videos</b><br>
-    Built a machine learning model to detect anomalous activities from traffic surveillance videos. Utilized Python, OpenCV, and HDP for video frame processing and anomaly detection.
-    </div>
-    """, unsafe_allow_html=True)
+for i in range(0, len(projects), 2):
+    cols = st.columns(2)
+    row_projects = projects[i:i+2]
+    for idx, proj in enumerate(row_projects):
+        with cols[idx]:
+            st.markdown(f"""
+            <div class='card'>
+            <b>{proj['title']}</b><br>
+            {proj['desc']}
+            </div>
+            """, unsafe_allow_html=True)
 st.markdown("### 📄 Resume")
-resume_url = "https://drive.google.com/uc?export=download&id=1mPvCKPWHFk-fg5uevW3i9TWVpeyz3uAn"
+resume_url = "https://drive.google.com/file/d/18sO0Grtv072VZDIALJ1COT8GaOttEYKL/view?usp=sharing"
 st.markdown(f"[👉 Download My Resume (PDF)]({resume_url})", unsafe_allow_html=True)
 
 st.markdown("<div class='section-title'>📞 Contact</div>", unsafe_allow_html=True)
